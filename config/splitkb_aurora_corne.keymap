@@ -6,7 +6,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
@@ -34,10 +33,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB       &kp Q  &kp W  &kp E                 &kp R              &kp T          &kp Y    &kp U      &kp I      &kp O    &kp P     &kp BSPC
-&kp CAPSLOCK  &kp A  &kp S  &kp D                 &kp F              &kp G          &kp H    &kp J      &kp K      &kp L    &kp SEMI  &bl BL_TOG
-&kp LSHFT     &kp Z  &kp X  &kp C                 &kp V              &kp B          &kp N    &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                            &u_lt 5 LEFT_COMMAND  &u_lt 4 BACKSPACE  &u_lt 3 TAB    &kp RET  &kp SPACE  &kp RALT
+&kp TAB       &kp Q               &kp W           &kp E                 &kp R              &kp T          &kp Y    &kp U      &kp I      &kp O    &kp P     &kp BSPC
+&kp CAPSLOCK  &mt LEFT_COMMAND A  &mt LEFT_ALT S  &mt LEFT_CONTROL D    &mt LEFT_SHIFT F   &kp G          &kp H    &kp J      &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LSHFT     &kp Z               &kp X           &kp C                 &kp V              &kp B          &kp N    &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                                                  &u_lt 5 LEFT_COMMAND  &u_lt 4 BACKSPACE  &u_lt 3 TAB    &kp RET  &kp SPACE  &kp RALT
             >;
         };
 
