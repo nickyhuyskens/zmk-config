@@ -9,6 +9,12 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+&led_strip {
+  // chain-length = <0>;
+  chain-length = <27>;
+  // 21 backlight + 6 glowlight
+};
+
 / {
     behaviors {
         u_lt: u_lt {
