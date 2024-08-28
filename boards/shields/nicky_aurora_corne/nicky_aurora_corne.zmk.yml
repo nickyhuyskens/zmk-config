@@ -1,0 +1,12 @@
+file_format: "1"
+id: nicky_aurora_corne
+name: nicky.com Aurora Corne
+type: shield
+url: https://nicky.com/products/aurora-corne-pcb-kit
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - nicky_aurora_corne_left
+  - nicky_aurora_corne_right
