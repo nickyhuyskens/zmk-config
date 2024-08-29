@@ -119,8 +119,8 @@
 
         SYM {
             bindings = <
-&kp TAB    &kp FR_LCBR  &kp FR_LBRC  &kp STAR   &kp FR_RBRC   &kp FR_RCBR     &trans  &trans     &trans     &trans    &trans    &trans
-&kp CAPS   &kp COLON       &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS     &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+&kp TAB    &kp LS(FR_LBRC)  &kp FR_LBRC  &kp FR_RBRC   &kp LS(FR_RBRC)   &kp FR_RCBR     &trans  &trans     &trans     &trans    &trans    &trans
+&kp CAPS   &kp COLON       &kp FR_LPRN  &kp FR_RPRN  &kp CARET  &kp PLUS     &trans  &kp LSHFT  &kp LCTRL  FR_PIPE  &kp LGUI  &trans
 &kp LSHFT  &kp TILDE       &kp EXCL  &kp AT     &kp HASH   &kp PIPE     &trans  &trans     &trans     &kp LALT  &trans    &trans
                                      &kp LPAR   &kp RPAR   &kp MINUS    &trans  &trans     &trans
             >;
