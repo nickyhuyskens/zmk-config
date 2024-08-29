@@ -25,7 +25,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            flavor = "tap-unless-interrupted";
         };
     };
 
