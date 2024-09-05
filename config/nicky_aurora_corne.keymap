@@ -64,10 +64,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB       &kp Q                 &kp W             &kp E                 &kp R               &kp T          &kp Y    &kp U               &kp I                 &kp O             &kp P                    &kp BSPC
-&kp CAPSLOCK  &u_ht LEFT_COMMAND A  &u_ht LEFT_ALT S  &u_ht LEFT_CONTROL D  &u_ht LEFT_SHIFT F  &kp G          &kp H    &u_ht LEFT_SHIFT J  &u_ht LEFT_CONTROL K  &u_ht LEFT_ALT L  &u_ht LEFT_COMMAND SEMI  &kp ENTER
-&kp LSHFT     &kp Z                 &kp X             &kp C                 &kp V               &kp B          &kp N    &kp M               &kp COMMA             &kp DOT           &kp FSLH                 &kp ESC
-                                                      &u_lt 5 LEFT_COMMAND  &u_lt 4 BACKSPACE   &u_lt 3 TAB    &kp RET  &u_lt 6 SPACE       &kp RALT
+&kp TAB       &kp Q                 &kp W             &kp E                 &kp R               &kp T          &kp Y        &kp U               &kp I                 &kp O             &kp P                    &kp BSPC
+&kp CAPSLOCK  &u_ht LEFT_COMMAND A  &u_ht LEFT_ALT S  &u_ht LEFT_CONTROL D  &u_ht LEFT_SHIFT F  &kp G          &kp H        &u_ht LEFT_SHIFT J  &u_ht LEFT_CONTROL K  &u_ht LEFT_ALT L  &u_ht LEFT_COMMAND SEMI  &kp ENTER
+&kp LSHFT     &kp Z                 &kp X             &kp C                 &kp V               &kp B          &kp N        &kp M               &kp COMMA             &kp DOT           &kp FSLH                 &kp ESC
+                                                      &u_lt 5 LEFT_COMMAND  &u_lt 4 BACKSPACE   &u_lt 3 TAB    &u_lt 7 RET  &u_lt 6 SPACE       &kp RALT
             >;
         };
 
@@ -134,6 +134,15 @@
 &kp CAPS   &kp COLON        &kp FR_LPRN  &kp FR_RPRN  &kp CARET        &kp PLUS       &trans  &carret_macro  &kp LCTRL  &kp LA(LS(L))  &kp RIGHT_BRACKET  &trans
 &kp LSHFT  &kp TILDE        &kp EXCL     &kp AT       &kp HASH         &kp PIPE       &trans  &kp RA(N)      &trans     &kp LALT       &trans             &trans
                                          &kp LPAR     &kp RPAR         &kp MINUS      &trans  &trans         &trans
+            >;
+        };
+
+        SYMBOLS {
+            bindings = <
+&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS
+&trans     &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
