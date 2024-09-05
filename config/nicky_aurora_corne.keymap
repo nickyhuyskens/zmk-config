@@ -43,6 +43,15 @@
         };
     };
 
+    macros {
+        carret_macro: carret_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp SPACE>;
+            label = "CARRET_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -120,10 +129,10 @@
 
         SYM {
             bindings = <
-&kp TAB    &kp LS(FR_LBRC)  &kp FR_LBRC  &kp FR_RBRC  &kp LS(FR_RBRC)  &kp FR_RCBR    &trans  &trans            &trans     &trans         &trans             &bl BL_TOG
-&kp CAPS   &kp COLON        &kp FR_LPRN  &kp FR_RPRN  &kp CARET        &kp PLUS       &trans  &kp LEFT_BRACKET  &kp LCTRL  &kp LA(LS(L))  &kp RIGHT_BRACKET  &trans
-&kp LSHFT  &kp TILDE        &kp EXCL     &kp AT       &kp HASH         &kp PIPE       &trans  &kp RA(N)         &trans     &kp LALT       &trans             &trans
-                                         &kp LPAR     &kp RPAR         &kp MINUS      &trans  &trans            &trans
+&kp TAB    &kp LS(FR_LBRC)  &kp FR_LBRC  &kp FR_RBRC  &kp LS(FR_RBRC)  &kp FR_RCBR    &trans  &trans         &trans     &trans         &trans             &bl BL_TOG
+&kp CAPS   &kp COLON        &kp FR_LPRN  &kp FR_RPRN  &kp CARET        &kp PLUS       &trans  &carret_macro  &kp LCTRL  &kp LA(LS(L))  &kp RIGHT_BRACKET  &trans
+&kp LSHFT  &kp TILDE        &kp EXCL     &kp AT       &kp HASH         &kp PIPE       &trans  &kp RA(N)      &trans     &kp LALT       &trans             &trans
+                                         &kp LPAR     &kp RPAR         &kp MINUS      &trans  &trans         &trans
             >;
         };
     };
