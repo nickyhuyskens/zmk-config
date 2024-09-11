@@ -12,9 +12,9 @@
 
 &led_strip {
     // chain-length = <0>;
-    // chain-length = <27>;
+    chain-length = <27>;
 
-    chain-length = <3>;
+    // chain-length = <3>;
 
     // 21 backlight + 6 glowlight
 };
