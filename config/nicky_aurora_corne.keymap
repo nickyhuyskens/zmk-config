@@ -12,8 +12,8 @@
 
 &led_strip {
     // chain-length = <0>;
-
     // chain-length = <27>;
+
     chain-length = <3>;
 
     // 21 backlight + 6 glowlight
@@ -68,7 +68,7 @@
 &kp TAB       &kp Q                 &kp W             &kp E                 &kp R               &kp T          &kp Y        &kp U               &kp I                 &kp O             &kp P                    &kp BSPC
 &kp CAPSLOCK  &u_ht LEFT_COMMAND A  &u_ht LEFT_ALT S  &u_ht LEFT_CONTROL D  &u_ht LEFT_SHIFT F  &kp G          &kp H        &u_ht LEFT_SHIFT J  &u_ht LEFT_CONTROL K  &u_ht LEFT_ALT L  &u_ht LEFT_COMMAND SEMI  &kp ENTER
 &kp LSHFT     &kp Z                 &kp X             &kp C                 &kp V               &kp B          &kp N        &kp M               &kp COMMA             &kp DOT           &kp FSLH                 &kp ESC
-                                                      &u_lt 5 LEFT_COMMAND  &u_lt 4 BACKSPACE   &u_lt 3 TAB    &u_lt 7 RET  &u_lt 6 SPACE       &kp RALT
+                                                      &u_lt 5 LEFT_COMMAND  &u_lt 4 SPACE       &u_lt 3 TAB    &u_lt 7 RET  &u_lt 6 SPACE       &kp BACKSPACE
             >;
         };
 
@@ -131,9 +131,9 @@
 
         SYM {
             bindings = <
-&kp TAB    &kp LS(FR_LBRC)  &kp FR_LBRC  &kp FR_RBRC  &kp LS(FR_RBRC)  &kp FR_RCBR    &trans  &trans         &trans     &trans         &trans             &rgb_ug RGB_TOG
+&kp TAB    &kp LS(FR_LBRC)  &kp FR_LBRC  &kp FR_RBRC  &kp LS(FR_RBRC)  &kp FR_RCBR    &trans  &trans         &trans     &trans         &trans             &kp EQUAL
 &kp CAPS   &kp COLON        &kp FR_LPRN  &kp FR_RPRN  &kp CARET        &kp PLUS       &trans  &carret_macro  &kp LCTRL  &kp LA(LS(L))  &kp RIGHT_BRACKET  &trans
-&kp LSHFT  &kp TILDE        &kp EXCL     &kp AT       &kp HASH         &kp PIPE       &trans  &kp RA(N)      &trans     &kp LALT       &trans             &trans
+&kp LSHFT  &kp TILDE        &kp EXCL     &kp AT       &kp HASH         &kp PIPE       &trans  &kp RA(N)      &trans     &kp LALT       &trans             &rgb_ug RGB_TOG
                                          &kp LPAR     &kp RPAR         &kp MINUS      &trans  &trans         &trans
             >;
         };
