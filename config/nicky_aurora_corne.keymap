@@ -12,10 +12,10 @@
 
 &led_strip {
     // chain-length = <0>;
+
     chain-length = <27>;
 
     // chain-length = <3>;
-
     // 21 backlight + 6 glowlight
 };
 
@@ -27,7 +27,7 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
             quick-tap-ms = <0>;
             require-prior-idle-ms = <0>;
@@ -39,9 +39,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
-            quick-tap-ms = <200>;
+            quick-tap-ms = <150>;
         };
     };
 
