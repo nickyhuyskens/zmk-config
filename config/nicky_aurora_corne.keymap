@@ -52,6 +52,76 @@
             bindings = <&kp LBKT &kp SPACE>;
             label = "CARRET_MACRO";
         };
+
+        tmux_0: tmux_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp LS(NUMBER_0)>;
+            label = "TMUX_0";
+        };
+
+        tmux_1: tmux_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp LS(NUMBER_1)>;
+            label = "TMUX_1";
+        };
+
+        tmux_2: tmux_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp LS(NUMBER_2)>;
+            label = "TMUX_2";
+        };
+
+        tmux_3: tmux_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp LS(NUMBER_3)>;
+            label = "TMUX_3";
+        };
+
+        tmux_4: tmux_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp LS(NUMBER_4)>;
+            label = "TMUX_4";
+        };
+
+        tmux_5: tmux_5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp LS(NUMBER_5)>;
+            label = "TMUX_5";
+        };
+
+        tmux_6: tmux_6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp LS(NUMBER_6)>;
+            label = "TMUX_6";
+        };
+
+        tmux_7: tmux_7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp LS(NUMBER_7)>;
+            label = "TMUX_7";
+        };
+
+        tmux_8: tmux_8 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp LS(NUMBER_8)>;
+            label = "TMUX_8";
+        };
+
+        tmux_9: tmux_9 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp LS(NUMBER_9)>;
+            label = "TMUX_9";
+        };
     };
 
     keymap {
@@ -65,7 +135,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB       &kp Q                 &kp W             &kp E                 &kp R               &kp T          &kp Y        &kp U               &kp I                 &kp O             &kp P                    &kp BSPC
+&kp TAB       &kp Q                 &kp W             &kp E                 &kp R               &u_lt 8 T      &kp Y        &kp U               &kp I                 &kp O             &kp P                    &kp BSPC
 &kp CAPSLOCK  &u_ht LEFT_COMMAND A  &u_ht LEFT_ALT S  &u_ht LEFT_CONTROL D  &u_ht LEFT_SHIFT F  &kp G          &kp H        &u_ht LEFT_SHIFT J  &u_ht LEFT_CONTROL K  &u_ht LEFT_ALT L  &u_ht LEFT_COMMAND SEMI  &kp ENTER
 &kp LSHFT     &kp Z                 &kp X             &kp C                 &kp V               &kp B          &kp N        &kp M               &kp COMMA             &kp DOT           &kp FSLH                 &kp ESC
                                                       &u_lt 5 LEFT_COMMAND  &u_lt 4 SPACE       &u_lt 3 TAB    &u_lt 7 RET  &u_lt 6 SPACE       &kp BACKSPACE
@@ -144,6 +214,15 @@
 &none                 &trans     &trans  &trans  &trans  &none     &none   &trans  &trans  &trans  &trans  &none
 &none                 &kp GRAVE  &none   &none   &none   &none     &none   &none   &none   &none   &none   &none
                                          &none   &none   &none     &none   &none   &none
+            >;
+        };
+
+        tmux {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &tmux_7  &tmux_8  &tmux_9  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &tmux_4  &tmux_5  &tmux_6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &tmux_1  &tmux_2  &tmux_3  &trans  &trans
+                        &trans  &trans  &trans    &trans  &tmux_0  &trans
             >;
         };
     };
