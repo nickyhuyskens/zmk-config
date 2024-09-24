@@ -126,7 +126,7 @@
         tmux_new: tmux_new {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp N>;
+            bindings = <&kp LC(B) &kp C>;
             label = "TMUX_NEW";
         };
 
