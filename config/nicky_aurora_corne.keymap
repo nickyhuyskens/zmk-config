@@ -140,7 +140,7 @@
         tmux_horizontal: tmux_horizontal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp NUMBER_4>;
+            bindings = <&kp LC(B) &kp NUMBER_3>;
             label = "TMUX_HORIZONTAL";
         };
     };
