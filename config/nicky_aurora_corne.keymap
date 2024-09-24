@@ -122,6 +122,27 @@
             bindings = <&kp LC(B) &kp LS(NUMBER_9)>;
             label = "TMUX_9";
         };
+
+        tmux_new: tmux_new {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp N>;
+            label = "TMUX_NEW";
+        };
+
+        tmux_vertical: tmux_vertical {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp LS(SINGLE_QUOTE)>;
+            label = "TMUX_VERTICAL";
+        };
+
+        tmux_horizontal: tmux_horizontal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp NUMBER_4>;
+            label = "TMUX_HORIZONTAL";
+        };
     };
 
     keymap {
@@ -219,10 +240,10 @@
 
         tmux {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &tmux_7  &tmux_8  &tmux_9  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &tmux_4  &tmux_5  &tmux_6  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &tmux_1  &tmux_2  &tmux_3  &trans  &trans
-                        &trans  &trans  &trans    &trans  &tmux_0  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &tmux_vertical    &tmux_7  &tmux_8  &tmux_9  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &tmux_horizontal  &tmux_4  &tmux_5  &tmux_6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &tmux_new         &tmux_1  &tmux_2  &tmux_3  &trans  &trans
+                        &trans  &trans  &trans    &trans            &tmux_0  &trans
             >;
         };
     };
