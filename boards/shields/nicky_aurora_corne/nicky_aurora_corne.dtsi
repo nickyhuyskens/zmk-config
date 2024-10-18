@@ -17,6 +17,7 @@
     transform = <&five_column_transform>;
 };
 
+/ {
     chosen {
         zephyr,display = &oled;
         zmk,physical-layout = &foostan_corne_6col_layout;
