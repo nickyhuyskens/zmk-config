@@ -249,10 +249,19 @@
 
         aerospace {
             bindings = <
-&none  &none  &none  &none  &none           &none    &none  &kp LC(NUMBER_7)  &kp LC(NUMBER_8)  &kp LC(NUMBER_9)  &none  &none
-&none  &none  &none  &none  &kp LEFT_SHIFT  &none    &none  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)  &kp LC(NUMBER_6)  &none  &none
-&none  &none  &none  &none  &none           &none    &none  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &none  &none
-                     &none  &none           &none    &none  &kp LC(NUMBER_0)  &none
+&none  &none  &lt 10 W  &none  &none           &none    &none  &kp LC(NUMBER_7)  &kp LC(NUMBER_8)  &kp LC(NUMBER_9)  &none  &none
+&none  &none  &none     &none  &kp LEFT_SHIFT  &none    &none  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)  &kp LC(NUMBER_6)  &none  &none
+&none  &none  &none     &none  &none           &none    &none  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &none  &none
+                        &none  &none           &none    &none  &kp LC(NUMBER_0)  &none
+            >;
+        };
+
+        aerospace_move {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans            &trans            &trans                &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LA(LC(LEFT))  &kp LA(LC(DOWN))  &kp LA(LC(UP_ARROW))  &kp LA(LC(RIGHT))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans            &trans            &trans                &trans             &trans  &trans
+                        &trans  &trans  &trans    &trans            &trans            &trans
             >;
         };
     };
