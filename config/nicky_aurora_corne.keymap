@@ -252,7 +252,7 @@
 &none  &none  &none  &none  &none           &none    &none  &kp LC(NUMBER_7)  &kp LC(NUMBER_8)  &kp LC(NUMBER_9)  &none  &none
 &none  &none  &none  &none  &kp LEFT_SHIFT  &none    &none  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)  &kp LC(NUMBER_6)  &none  &none
 &none  &none  &none  &none  &none           &none    &none  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &none  &none
-                     &none  &none           &none    &none  &none             &none
+                     &none  &none           &none    &none  &kp LC(NUMBER_0)  &none
             >;
         };
     };
